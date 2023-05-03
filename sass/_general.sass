@@ -16,6 +16,7 @@ a
         justify-content: center
         align-items: center
         cursor: pointer
+        
         &_hamburger
             display: block
             width: 24px
@@ -40,8 +41,19 @@ a
                 color: $brown
                 letter-spacing: 0.13em
                 &:hover
-                    transition: 0.2s all
-                    
+                    transition: 0.2s all    
+        &:hover
+            .header_menu_hamburger
+                span
+                    transition: 0.2s all  
+                    background-color: $pink_dark
+                    box-shadow: 1px 1px #767676
+            .header_menu_text
+                a
+                    transition: 0.2s all  
+                    color: $pink_dark
+                    text-shadow: 1px 1px #767676
+
     &_nav
         margin-block: auto
         &_ul
@@ -61,8 +73,9 @@ a
                     color: $brown
                     letter-spacing: 0.13em
                     &:hover
-                        transition: 0.2s all
+                        transition: 0.2s all  
                         color: $pink_dark
+                        text-shadow: 1px 1px #767676
     &_phone
         display: flex
         align-items: center
