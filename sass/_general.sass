@@ -95,19 +95,22 @@ main
         height: 1px
         background: #FFFAFA
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.15)
-        transition: 0.6s all
+        transition: 0.4s all
         &_item
+            position: absolute
             padding-inline: 60px
             padding-block: 40px
             display: flex
             opacity: 0%
-            transition: 0.6s all
+            transition: 0.5s all
             text-align: center
             color: $brown
             h1
+                pointer-events: none
                 font-size: 20px
                 font-weight: 600
             a
+                pointer-events: none
                 display: block
                 text-decoration: underline 1px
                 font-size: 16px
@@ -117,6 +120,11 @@ main
         height: 300px
     .slide_menu_item_active
         opacity: 100%
+        h1
+            pointer-events: auto
+        a
+            pointer-events: auto
+        
             
         
     .greetings
