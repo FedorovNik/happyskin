@@ -8,15 +8,18 @@ a
     box-shadow: 0px 4px 50px 20px rgba(0, 0, 0, 0.25)
     margin-top: 20px
     background-color: $whity
-.header
-    padding-block: 40px
+
+
+header
+    padding-block: 32px
     position: relative
-    &_menu
+    .phone_xs_sm
+        display: none
+    .menu
         display: flex
         justify-content: center
         align-items: center
         cursor: pointer
-        
         &_hamburger
             display: block
             width: 24px
@@ -31,8 +34,7 @@ a
                 &:nth-child(3)
                     margin-bottom: 0px
         &_text
-            a
-                text-decoration: none
+            span
                 margin-left: 10px
                 text-transform: uppercase
                 font-size: 16px
@@ -43,18 +45,17 @@ a
                 &:hover
                     transition: 0.2s all    
         &:hover
-            .header_menu_hamburger
+            .menu_hamburger
                 span
                     transition: 0.2s all  
                     background-color: $pink_dark
                     box-shadow: 1px 1px #767676
-            .header_menu_text
-                a
+            .menu_text
+                span
                     transition: 0.2s all  
                     color: $pink_dark
                     text-shadow: 1px 1px #767676
-
-    &_nav
+    .navigation
         margin-block: auto
         &_ul
             margin: 0
@@ -65,6 +66,7 @@ a
             padding-left: 0
             &_item
                 a
+                    transition: 0.2s all
                     text-decoration: none
                     text-transform: uppercase
                     font-weight: 400
@@ -76,31 +78,40 @@ a
                         transition: 0.2s all  
                         color: $pink_dark
                         text-shadow: 1px 1px #767676
-    &_phone
+    .phone
         display: flex
         align-items: center
         justify-content: end
-        &_img
-            margin-right: 5px
-        &_number
-            display: flex
-            align-items: center
-            a
-                text-decoration: none
-                font-size: 16px
-                line-height: 16px
-                font-weight: 600
-                letter-spacing: 0.09em
-                color: $brown
-    &_socials
-        display: flex
         i
-            font-size: 30px
+            margin-right: 5px
+            transition: 0.2s all
+            font-size: 18px
             color: $brown
-            margin-right: 10px
+        a
+            text-decoration: none
+            font-size: 16px
+            line-height: 16px
+            font-weight: 600
+            letter-spacing: 0.09em
+            color: $brown
+    .socials
+        display: flex
+        align-items: center
+        &_item
+            display: block
+            a
+                display: block
+                margin-right: 12px
+            i
+                transition: 0.2s all
+                font-size: 30px
+                color: $brown
+                
+                margin-block: 2px
+
 main
     position: relative
-    .slide_menu
+    .flow_menu
         display: block
         position: absolute
         z-index: 4
@@ -109,16 +120,16 @@ main
         background: #FFFAFA
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(0, 0, 0, 0.15)
         transition: 0.4s all
-        &_item
+        &_items
             position: absolute
             padding-inline: 60px
             padding-block: 40px
             display: flex
             opacity: 0%
             transition: 0.5s all
-            text-align: center
             color: $brown
             h1
+                margin-inline: auto
                 pointer-events: none
                 font-size: 20px
                 font-weight: 600
@@ -128,31 +139,30 @@ main
                 text-decoration: underline 1px
                 font-size: 16px
                 margin-bottom: 5px
-
-    .slide_menu_active
-        height: 300px
-    .slide_menu_item_active
+    .flow_menu_active
+        height: 250px
+    .flow_menu_items_active
         opacity: 100%
         h1
             pointer-events: auto
         a
             pointer-events: auto
         
-            
-        
     .greetings
         position: relative
-        .left_content
+        .left
             &_studio
                 margin-top: 40px
                 display: flex
                 &_divider
                     display: block
-                    height: 1px
+                    height: 0.7px
                     width: 55px
                     background-color: $brown
                     margin-block: auto
                     margin-right: 10px
+                    &_xs_sm
+                        display: none
                 &_name
                     font-size: 24px
                     color: $brown
@@ -162,19 +172,20 @@ main
                 width: 100%
             &_text
                 margin-top: 30px
-                font-size: 20px
+                font-size: 22px
                 line-height: 150%
                 letter-spacing: 0.05em
             &_subtext
                 margin-top: 30px
                 ul
+                    margin-bottom: 0
                     list-style-type: none
                     padding: 0
                     padding-left: 30px
                     position: relative
                     z-index: 1
                     li
-                        font-size: 20px
+                        font-size: 22px
                         display: flex
                         position: relative
                         &:before
@@ -182,9 +193,9 @@ main
                             display: block
                             position: absolute
                             left: -30px
-                            top: 15px
+                            top: 16px
                             width: 20px
-                            height: 1px
+                            height: 0.7px
                             background-color: $brown
             .btn
                 display: block
@@ -202,7 +213,7 @@ main
                 margin-bottom: 335px
                 position: relative
                 z-index: 1
-        .right_content
+        .right
             position: relative
             &_woman
                 height: 713px
@@ -212,7 +223,7 @@ main
                 right: 28px
                 top: 83px
                 z-index: 3
-            .pink_box
+            &_pinkbox
                 height: 711px
                 width: 454px
                 display: block
@@ -221,24 +232,25 @@ main
                 right: 0
                 background-color: $pink
                 z-index: 2
-            .blue_box
+            &_bluebox
                 display: block
                 position: absolute
                 background-color: $blue
-                height: 421px
+                height: 550px
                 width: 483px
                 right: 59px
                 top: 40px
                 z-index: 1
-        .vetka
+        .branch
             img
-                width: 836px
+                width: 794px
                 height: auto
                 display: block
                 position: absolute
                 bottom: 0
                 left: 0px
                 z-index: 0
+                opacity: 50%
 
 
 

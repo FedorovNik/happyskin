@@ -17,107 +17,118 @@
 </head>
 <body>
     <div class="container center_white_box">
+        <!-- Верхняя панель -->
         <header class="header">
-            <div class="container ">
+            <div class="container">
                 <div class="row">
-                    <div class="header_menu col-xl-2">
-                        <div class="header_menu_hamburger">
+                    <div class="phone_xs_sm col-6">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:84957970988">+7 (965) 426-45-12</a>
+                    </div>
+                    <div class="menu col-6 col-md-2 col-lg-2">
+                        <div class="menu_hamburger">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <div class="header_menu_text">
-                            <a href="#">Меню</a>
+                        <div class="menu_text">
+                            <span>Меню</span>
                         </div>
                     </div>
-                    <nav class="header_nav col-xl-6">
-                        <ul class="header_nav_ul">
-                            <li class="header_nav_ul_item"><a href="#">Главная</a></li>
-                            <li class="header_nav_ul_item"><a href="#">О нас</a></li>
-                            <li class="header_nav_ul_item"><a href="#">Услуги и цены</a></li>
-                            <li class="header_nav_ul_item"><a href="#">Отзывы</a></li>
-                            <li class="header_nav_ul_item"><a href="#">Контакты</a></li>
+                    <nav class="navigation col-lg-6">
+                        <ul class="navigation_ul">
+                            <li class="navigation_ul_item"><a href="#">Главная</a></li>
+                            <li class="navigation_ul_item"><a href="#">О нас</a></li>
+                            <li class="navigation_ul_item"><a href="#">Услуги и цены</a></li>
+                            <li class="navigation_ul_item"><a href="#">Отзывы</a></li>
+                            <li class="navigation_ul_item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="header_phone col-xl-2">
-                        <div class="header_phone_img">
-                            <i class="fa-solid fa-phone" style="font-size: 19px;"></i>
-                        </div>
-                        <div class="header_phone_number">+7 (965) 426-45-12</div>
+                    <div class="phone offset-md-5 col-md-3 offset-lg-0 col-lg-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:84957970988">+7 (965) 426-45-12</a>
                     </div>
-                    <div class="header_socials col-xl-2">
-                        <div class="header_socials_item"><a href="#1"><i class="fa-brands fa-instagram"></i></a></div>
-                        <div class="header_socials_item"><a href="#2"><i class="fa-brands fa-vk"></i></a></div>
-                        <div class="header_socials_item"><a href="#3"><i class="fa-brands fa-telegram"></i></a></div>
-                        <div class="header_socials_item"><a href="#4"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div class="socials col-md-2 col-lg-2">
+                        <div class="socials_item"><a href="#1"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="socials_item"><a href="#2"><i class="fa-brands fa-vk"></i></a></div>
+                        <div class="socials_item"><a href="#3"><i class="fa-brands fa-telegram"></i></a></div>
+                        <div class="socials_item"><a href="#4"><i class="fa-brands fa-whatsapp"></i></a></div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Контент -->
         <main>
-            <section class="slide_menu">
+            <!-- Выпадающее меню -->
+            <section class="flow_menu">
                 <div class="container">
                     <div class="row">
-                        <div class="slide_menu_item">
-                            <div class="poss col-4">
+                        <div class="flow_menu_items">
+                            <div class="col-12 col-md-4">
                                 <h1>Услуги и цены</h1>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <a href="#">Эпиляция полимерным воском</a>
+                                <a href="#">Электроэпиляция</a>
+                                <a href="#">Шугаринг</a>
+                                <a href="#">Косметология</a>
                             </div>
-                            <div class="poss col-4">
+                            <div class="col-12 col-md-4">
                                 <h1>Информация</h1>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Фото</a>
+                                <a href="#">Видео</a>
+                                <a href="#">Вопросы и ответы</a>
                             </div>
-                            <div class="poss col-4">
+                            <div class="col-12 col-md-4">
                                 <h1>Важно</h1>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
-                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <a href="#">Подготовка к процедуре эпиляции</a>
+                                <a href="#">Противопоказания</a>
+                                <a href="#">Что нужно знать?</a>
+                                <a href="#">Реккомендации по уходу за кожей</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </section>
+            <!-- Первая секция -->
             <section class="greetings">
                 <div class="container">
                     <div class="row">
-                        <div class="offset-xl-1 col-xl-4 left_content">
-                            <div class="left_content_studio">
-                                <div class="left_content_studio_divider"></div>
-                                <div class="left_content_studio_name">Студия lorem</div>
+                        <!-- Левая часть -->
+                        <div class="col-12 left offset-md-1 col-md-4">
+                            <div class="left_studio">
+                                <div class="left_studio_divider"></div>
+                                <div class="left_studio_name">Студия эпиляции</div>
+                                <div class="left_studio_divider left_studio_divider_xs_sm"></div>
                             </div>
-                            <img src="img/logo.svg" alt="logotype" class="left_content_logo">
-                            <div class="left_content_text">Выбери понравившуюся услугу, запишись онлайн и получи скидку 10% на первый визит! </div>
-                            <div class="left_content_subtext">
+                            <img src="img/logo.svg" alt="logotype" class="left_logo">
+                            <div class="left_text">Выбери понравившуюся услугу, запишись онлайн и получи скидку 10% на первый визит! </div>
+                            <div class="left_subtext">
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Электроэпиляция</li>
+                                    <li>Эпиляция полимерным воском</li>
+                                    <li>Шугаринг</li>
+                                    <li>Косметология</li>
                                 </ul>
                             </div>
                             <button class="btn">Записаться</button>
                         </div>
-                        <div class="col-xl-7 right_content">
-                            <img class="right_content_woman" src="img/woman.png" alt="woman">
-                            <div class="pink_box"></div>
-                            <div class="blue_box"></div>
+                        <!-- Правая часть -->
+                        <div class="right col-md-7">
+                            <img class="right_woman" src="img/woman.png" alt="woman">
+                            <div class="right_pinkbox"></div>
+                            <div class="right_bluebox"></div>
                         </div>
-                        <div class="vetka">
-                            <img src="img/vetka_2.svg" alt="vetka">
+                        <!-- Ветка снизу -->
+                        <div class="branch">
+                            <img src="img/vetka_2.svg" alt="branch">
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Вторая секция -->
             <section class="asd">
-                text
+                Lorem ipsum dolor sit, amet
             </section>
         </main>
     </div>

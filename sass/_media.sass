@@ -1,33 +1,253 @@
-@media (max-width: 1400px)
-    .header
-        &_phone
-            &_number
-                a
-                    font-size: 14px
+@media (min-width: 1400px)
 
-@media (min-width: 1200px) and (max-width: 1400px)
-    .header
-        &_menu
+
+@media (min-width: 1200px) and (max-width: 1399.98px)
+    header
+        .menu
             &_text
-                a
-                    font-size: 14px
-        &_nav
+                span
+                    font-size: 15px
+        .phone
+            a
+                font-size: 14px
+        .navigation
             &_ul
                 &_item
                     a
-                        font-size: 14px
+                        font-size: 15px
     main
         .greetings
-            .left_content
+            .right
+                &_woman
+                    height: 640px
+                &_pinkbox
+                    height: 630px
+                    width: 402px
+                    top: 133px
+                    right: 0
+                &_bluebox
+                    height: 489px
+                    width: 437px
+                    top: 40px
+                    right: 59px
+            .left
                 .btn
-                    margin-bottom: 285px
-            .vetka
+                    margin-bottom: 256px
+            .branch
                 img
-                    width: 673px
+                    width: 682px
                     height: auto
                     display: block
                     position: absolute
                     bottom: 0
                     left: 0px
                     z-index: 0
-            
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+    header
+        .menu
+            &_hamburger
+                height: 8px
+            &_text
+                span
+                    font-size: 14px
+        .navigation
+            &_ul
+                &_item
+                    a
+                        font-size: 14px
+                        letter-spacing: 0.06em
+        .phone
+            i
+                margin-right: 5px
+                font-size: 14px  
+            a
+                font-size: 14px
+                letter-spacing: -0.01em
+        .socials
+            a
+                margin-right: 7px
+            i
+                font-size: 25px
+    //Тут закончил 
+    main
+        .greetings
+            .left
+                &_studio
+                    &_divider
+                        width: 40px
+                        height: 0.5px
+                    &_name
+                        font-size: 20px
+                &_text
+                    font-size: 18px
+                &_subtext
+                    ul
+                        li
+                            font-size: 18px
+                .btn
+                    margin-bottom: 228px
+                    font-size: 18px
+            .right
+                &_woman
+                    height: 550px
+                    width: auto
+                    right: 28px
+                    top: 83px
+                &_bluebox
+                    width: 374px
+                    height: 420px
+                &_pinkbox
+                    width: 359px
+                    height: 544px
+            .branch
+                img
+                    width: 595px
+@media (min-width: 768px) and (max-width: 991.98px)
+    header
+        .navigation
+            display: none
+        .phone
+            i
+                font-size: 16px
+                color: $brown
+            a
+                font-size: 14px
+                letter-spacing: 0.03em
+        .socials
+            a
+                margin-right: 4px
+            i
+                font-size: 23px
+                color: $brown
+                margin-top: 2px
+                
+    main
+        .flow_menu
+            &_items
+                padding-block: 30px
+                padding-inline: 50px
+                h1
+                    font-size: 18px
+                a
+                    font-size: 14px
+        .greetings
+            .left
+                &_studio
+                    &_divider
+                        width: 28px
+                    &_name
+                        font-size: 19px
+                &_text
+                    font-size: 16px
+                &_subtext
+                    ul
+                        li
+                            font-size: 16px
+                            
+                            &:before
+                                height: 0.5px
+                                top: 11px   
+                .btn
+                    height: 50px
+                    width: 204px
+                    font-size: 14px
+                    margin-bottom: 171px
+            .right
+                &_woman
+                    width: 290px
+                    height: auto
+                    right: 20px
+                    top: 69px
+                &_bluebox
+                    height: 358px
+                    width: 270px
+                &_pinkbox
+                    height: 410px 
+                    width: 261px
+                    top: 111px
+            .branch
+                img
+                    width: 444px
+                    height: auto
+@media (min-width: 576px) and (max-width: 767.98px)
+    header
+        .phone_xs_sm
+            display: flex
+            i
+                font-size: 17px
+                margin-top: 5px
+                margin-right: 5px
+                color: $brown
+            a
+                font-size: 14px
+                letter-spacing: 0.03em
+                font-weight: 600
+        .menu
+            justify-content: end
+        .navigation
+            display: none
+        .phone
+            display: none
+        .socials
+            display: none
+    main
+        .flow_menu
+            &_items
+                flex-wrap: wrap
+                a
+                    margin-bottom: 3px
+                div
+                    margin-bottom: 20px
+        .flow_menu_active
+            height: 560px
+        .greetings
+            .left
+                &_studio
+                    margin-top: 18px
+                    justify-content: center
+                    &_divider
+                        margin-right: 0
+                        width: 116px
+                        &_xs_sm
+                            display: flex
+                    &_name
+                        margin-inline: 17px
+                &_logo
+                    display: block
+                    width: 75% 
+                    margin-inline: auto
+                &_text
+                    text-align: center
+                &_subtext
+                    ul
+                        //padding: 0
+                        display: flex
+                        flex-direction: column
+                        //justify-content: center
+                        li
+                            margin-inline: auto
+                            //&:nth-child(1)
+                                //width: 190px
+                            //&:nth-child(2)
+                                //width: 327px
+                            &:after
+                                content: ''
+                                display: block
+                                position: absolute
+                                right: -30px
+                                top: 16px
+                                width: 20px
+                                height: 0.7px
+                                background-color: $brown
+                .btn
+                    margin-bottom: 77px
+            .right
+                &_woman, &_pinkbox, &_bluebox
+                    display: none
+            .branch
+                display: none
+                        
+                             
+                        
+                

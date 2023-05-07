@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const slide_menu = document.querySelector('.slide_menu'),
-    slide_menu_item = document.querySelector('.slide_menu_item'),
-    header_menu = document.querySelectorAll('.header_menu');
+    const flow_menu = document.querySelector('.flow_menu'),
+    flow_menu_items = document.querySelector('.flow_menu_items'),
+    menu = document.querySelectorAll('.menu');
 
-    header_menu.forEach(item => {
+    menu.forEach(item => {
         item.addEventListener('click', () => {
-            slide_menu.classList.toggle('slide_menu_active');
-            slide_menu_item.classList.toggle('slide_menu_item_active');
+            flow_menu.classList.toggle('flow_menu_active');
+            flow_menu_items.classList.toggle('flow_menu_items_active');
         })
     })
 })
