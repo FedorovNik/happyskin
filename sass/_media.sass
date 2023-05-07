@@ -221,7 +221,7 @@
                     text-align: center
                 &_subtext
                     ul
-                        //padding: 0
+                        padding: 0
                         display: flex
                         flex-direction: column
                         //justify-content: center
@@ -247,7 +247,92 @@
                     display: none
             .branch
                 display: none
-                        
-                             
-                        
-                
+@media (min-width: 320px) and (max-width: 575.98px)
+    body
+        padding-inline: 16px
+    header
+        .phone_xs_sm
+            display: flex
+            i
+                font-size: 17px
+                margin-top: 5px
+                margin-right: 5px
+                color: $brown
+            a
+                font-size: 14px
+                letter-spacing: 0.03em
+                font-weight: 600
+        .menu
+            justify-content: end
+        .navigation
+            display: none
+        .phone
+            display: none
+        .socials
+            display: none
+    main
+        .flow_menu
+            &_items
+                flex-wrap: wrap
+                a
+                    margin-bottom: 3px
+                div
+                    margin-bottom: 20px
+        .flow_menu_active
+            height: 560px
+        .greetings
+            .left
+                &_studio
+                    margin-top: 18px
+                    justify-content: center
+                    &_divider
+                        margin-right: 0
+                        width: 20%
+                        &_xs_sm
+                            display: flex
+                    &_name
+                        font-size: 19px
+                        margin-inline: 17px
+                &_logo
+                    display: block
+                    width: 80% 
+                    margin-inline: auto
+                &_text
+                    text-align: center
+                    font-size: 15px
+                &_subtext
+                    
+                    ul
+                        padding: 0
+                        display: flex
+                        flex-direction: column
+                        //justify-content: center
+                        li
+                            font-size: 15px
+                            margin-inline: auto
+                            //&:nth-child(1)
+                                //width: 190px
+                            //&:nth-child(2)
+                                //width: 327px
+                            &:before
+                                top: 12px
+                            &:after
+                                content: ''
+                                display: block
+                                position: absolute
+                                right: -30px
+                                top: 12px
+                                width: 20px
+                                height: 0.7px
+                                background-color: $brown
+                .btn
+                    width: 265px
+                    height: 50px
+                    font-size: 16px
+                    margin-bottom: 77px
+            .right
+                &_woman, &_pinkbox, &_bluebox
+                    display: none
+            .branch
+                display: none
+
